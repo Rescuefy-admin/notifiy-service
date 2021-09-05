@@ -1,7 +1,7 @@
 {
-  "name": "{serviceName}-service",
+  "name": "notify-service",
   "version": "1.0.0",
-  "description": "{serviceDescription}",
+  "description": "Servicio encargado de las notificaciones ",
   "main": "index.js",
   "scripts": {
     "coverage": "nyc npm test",
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rescuefy-admin/{serviceName}-service.git"
+    "url": "git+https://github.com/Rescuefy-admin/notify-service.git"
   },
   "keywords": [],
   "author": "Gastón Pereyra",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rescuefy-admin/{serviceName}-service/issues"
+    "url": "https://github.com/Rescuefy-admin/notify-service/issues"
   },
-  "homepage": "https://github.com/Rescuefy-admin/{serviceName}-service#readme",
+  "homepage": "https://github.com/Rescuefy-admin/notify-service#readme",
   "devDependencies": {
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^13.2.0",

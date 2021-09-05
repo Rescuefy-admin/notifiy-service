@@ -1,7 +1,7 @@
 ---
 name: Story
 about: Para organizar el proyecto
-title: "[{serviceName}] - API - "
+title: "[notify] - API - "
 labels: enhancement
 assignees: gastonpereyra
 
