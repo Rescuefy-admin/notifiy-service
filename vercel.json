@@ -1,0 +1,19 @@
+{
+    "routes": [
+        {
+            "src": "/api/message",
+            "methods": ["GET"],
+            "dest": "/api/message/list"
+        },
+        {
+            "src": "/api/message/(?<id>[^/]+)",
+            "methods": ["GET"],
+            "dest": "/api/message/get?id=$id"
+        },
+        {
+            "src": "/.*",
+            "status": 404,
+            "dest": "/api/not-found/message"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "{serviceName}-service",
+  "version": "1.0.0",
+  "description": "{serviceDescription}",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc npm test",
+    "deploy": "vercel --prod",
+    "lint": "eslint lib/ tests/",
+    "test": "export TEST_ENV=true; mocha --exit --recursive tests/",
+    "test-ci": "nyc --reporter=lcov --reporter=text-summary mocha --exit --recursive tests/",
+    "start": "vercel dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rescuefy-admin/{serviceName}-service.git"
+  },
+  "keywords": [],
+  "author": "Gastón Pereyra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rescuefy-admin/{serviceName}-service/issues"
+  },
+  "homepage": "https://github.com/Rescuefy-admin/{serviceName}-service#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^9.1.1",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.2",
+    "vercel": "^21.0.1"
+  }
+}
