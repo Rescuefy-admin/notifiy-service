@@ -8,11 +8,10 @@
         {
             "src": "/api/message/(?<id>[^/]+)",
             "methods": ["GET"],
-            "dest": "/api/message/get?id=$id"
+            "dest": "/api/message/get?pathIds.id=$id"
         },
         {
             "src": "/.*",
-            "status": 404,
             "dest": "/api/not-found/message"
         }
     ]

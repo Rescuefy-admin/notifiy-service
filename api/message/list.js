@@ -1,15 +1,21 @@
 'use strict';
 
-module.exports = async ({
-	url, method, body, query, cookies, headers
-}, res) => {
-	res.json({
-		name: 'Message GET List',
-		url,
-		method,
-		...body && { body },
-		...query && { query },
-		...cookies && { cookies },
-		...headers && { headers }
-	});
-};
+const { handler, API } = require('vercel-serverless-api');
+
+class MessageListApi extends API {
+
+	process() {
+		this.setBody({
+			name: 'Message GET List',
+			...this.request,
+			pathParameters: this.pathIds,
+			queries: {
+				...this.query,
+				filters: this.filters,
+				sort: this.sort
+			}
+		});
+	}
+}
+
+module.exports = async (...args) => handler(MessageListApi, ...args);

@@ -9,17 +9,34 @@
     "lint": "eslint lib/ tests/",
     "test": "export TEST_ENV=true; mocha --exit --recursive tests/",
     "test-ci": "nyc --reporter=lcov --reporter=text-summary mocha --exit --recursive tests/",
-    "start": "vercel dev"
+    "start": "vercel dev",
+    "vercel-login": "vercel login --github"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rescuefy-admin/notify-service.git"
   },
-  "keywords": [],
-  "author": "Gastón Pereyra",
+  "keywords": [
+    "rescuefy",
+    "service",
+    "vercel",
+    "notify"
+  ],
+  "authors": [
+    {
+      "name": "Gastón Pereyra",
+      "email": "rgpxen@gmail.com",
+      "url": "https://github.com/gastonpereyra"
+    },
+    {
+      "name": "Proyecto Rescuefy",
+      "email": "proyecto.rescuefy@gmail.com",
+      "url": "https://github.com/Rescuefy"
+    }
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rescuefy-admin/notify-service/issues"
+    "url": "https://github.com/Rescuefy-admin/notify-service/issues/new?labels=bug&template=bug.md&title=[BUG]"
   },
   "homepage": "https://github.com/Rescuefy-admin/notify-service#readme",
   "devDependencies": {
@@ -29,6 +46,9 @@
     "mocha": "^9.1.1",
     "nyc": "^15.1.0",
     "sinon": "^11.1.2",
-    "vercel": "^21.0.1"
+    "vercel": "^23.1.2"
+  },
+  "dependencies": {
+    "vercel-serverless-api": "^1.0.0"
   }
 }
