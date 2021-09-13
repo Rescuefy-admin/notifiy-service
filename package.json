@@ -49,7 +49,10 @@
     "vercel": "^23.1.2"
   },
   "dependencies": {
-    "vercel-serverless-api": "^1.0.0",
-    "nodemailer": "^6.6.3"
+    "@janiscommerce/superstruct": "^1.2.0",
+    "googleapis": "^85.0.0",
+    "handlebars": "^4.7.7",
+    "nodemailer": "^6.6.3",
+    "vercel-serverless-api": "^1.0.0"
   }
 }
