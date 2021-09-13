@@ -6,6 +6,11 @@
             "dest": "/api/email/send"
         },
         {
+            "src": "/",
+            "methods": ["GET"],
+            "dest": "/api/index"
+        },
+        {
             "src": "/.*",
             "dest": "/api/not-found/message"
         }
