@@ -4,8 +4,12 @@
     "coverage/",
     ".eslintrc.js",
     "actions/",
-    "api/",
-    "config/"
+    "config/",
+    "api/*",
+    "src/templates/",
+    "documents/",
+    "src/lib/logger.js"
+
   ],
   "extension": [
     ".js"
@@ -17,5 +21,6 @@
   "statements": 95,
   "branches": 95,
   "functions": 95,
-  "lines": 95
+  "lines": 95,
+  "skip-full": true
 }

@@ -8,7 +8,32 @@ Servicio encargado de las notificaciones
 
 ## APIs
 
-Pronto..
+* Base URL: `https://notifiy-service.vercel.app`
+
+### Send Email
+
+API para mandar emails. Tiene pre-cargados una serie de Templates.
+
+* Endpoint: `/api/email`
+* Method: `POST`
+
+#### Body
+
+* `templateCode`: _string_, código del template a usar
+* `message`: _object_, la información para intercambiar en el template
+* `to`: _array<string>_, lista de direcciones de emails de destino
+
+#### Template
+
+Existen los siguientes templates.
+
+##### Default
+
+Es para mandar un mensaje custom
+
+* `title`
+* `mainText`
+* `secondaryText`
 
 ## Para desarrollar
 

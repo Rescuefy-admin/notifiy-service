@@ -1,14 +1,14 @@
 {
     "routes": [
         {
-            "src": "/api/message",
-            "methods": ["GET"],
-            "dest": "/api/message/list"
+            "src": "/api/email",
+            "methods": ["POST"],
+            "dest": "/api/email/send"
         },
         {
-            "src": "/api/message/(?<id>[^/]+)",
+            "src": "/",
             "methods": ["GET"],
-            "dest": "/api/message/get?pathIds.id=$id"
+            "dest": "/api/index"
         },
         {
             "src": "/.*",
