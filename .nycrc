@@ -5,10 +5,11 @@
     ".eslintrc.js",
     "actions/",
     "config/",
-    "api/not-found/message.js",
-    "api/index.js",
-    "templates/",
-    "documents/"
+    "api/*",
+    "src/templates/",
+    "documents/",
+    "src/lib/logger.js"
+
   ],
   "extension": [
     ".js"
