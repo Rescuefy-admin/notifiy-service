@@ -2,23 +2,15 @@
 
 const NodeMailer = require('nodemailer');
 
-const getAccessToken = require('./google-suit/get-access-token');
-
 module.exports = class EmailSender {
 
 	static async setTransporter() {
 
-		const accessToken = await getAccessToken();
-
 		this.transporter = NodeMailer.createTransport({
 			service: 'Gmail',
 			auth: {
-				type: 'OAuth2',
 				user: process.env.EMAIL_USER,
-				clientId: process.env.CLIENT_ID,
-				clientSecret: process.env.CLIENT_SECRET,
-				refreshToken: process.env.REFRESH_TOKEN,
-				accessToken
+				pass: process.env.APP_PASS
 			}
 		});
 	}
